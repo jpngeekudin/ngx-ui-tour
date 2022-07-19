@@ -46,7 +46,7 @@ export class TourAnchorNgBootstrapDirective implements OnInit, OnDestroy, TourAn
 
     this.isActive = true;
     this.popoverDirective.ngbPopover = this.tourStepTemplate.template;
-    this.popoverDirective.popoverTitle = step.title;
+    // this.popoverDirective.popoverTitle = step.title;
     this.popoverDirective.container =  'body';
     this.popoverDirective.placement = <Placement>(step.placement || 'top')
       .replace('before', 'left').replace('after', 'right')

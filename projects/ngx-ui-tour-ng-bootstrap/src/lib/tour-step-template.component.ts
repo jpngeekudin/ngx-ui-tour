@@ -16,6 +16,7 @@ import { NgbTourService } from './ng-bootstrap-tour.service';
   selector: 'tour-step-template',
   template: `
     <ng-template #tourStep let-step="step">
+    <div style="font-weight: bold; margin-bottom: 10px;">{{ step?.title }}</div>
       <p class="tour-step-content" [innerHTML]="step?.content"></p>
       <div class="tour-step-navigation">
         <button
